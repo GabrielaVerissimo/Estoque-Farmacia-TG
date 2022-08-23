@@ -3,7 +3,7 @@
 
 > *Trabalho de Graduação do 5º Semestre do curso de Tecnologia em Análise e Desenvolvimento de Sistemas.*
 
-Software de gerenciamento de estoque de farmácias visando atender a demanda de estoque rotativo evitando que as unidades/redes tenham um espaço desnecessário para o estoque de remédio, oferecendo o sistema, treinamento e suporte para os clientes.
+  Software de gerenciamento de estoque de farmácias visando atender a demanda de estoque rotativo evitando que as unidades/redes tenham um espaço desnecessário para o estoque de remédio, oferecendo o sistema, treinamento e suporte para os clientes.
 
 ## Orientado por:
 - Profª Cristiane Palomar Mercado
