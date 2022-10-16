@@ -7,49 +7,51 @@
   <title>Entre na sua conta :)</title>
 </head>
   <body>
+    <h1 class="titulo">
+      Novo por aqui?
+    </h1>
 
-    <div class="quadro">
+      <h2 class="subtitulo">
+        Cadastre-se agora e conheça uma nova forma de gerenciar sua farmácia!
+      </h2>
+        <button class="buttoncadastrar" type="submit" onsubmit="">
+          Cadastrar
+        </button>
+      <div class="quadro">
 
-      <div>
-        <h1 id="login">
-          Entre na sua conta
-        </h1>
+        <div>
+          <h1 id="login">
+            Entre na sua conta
+          </h1>
+        </div>
+
+        <form>
+          <fieldset class="grupo">
+              <div class="campo">
+                  <!-- <label for="usuario">
+                      Usuário
+                  </label> -->
+                  <input type="text" name="user" id="usuario" placeholder="Usuário" required>
+              </div>
+          
+              <div class="campo">
+                  <!-- <label for="boxsenha">
+                      Senha
+                  </label> -->
+                  <input type="password" name="senha" id="boxsenha" placeholder="Senha" required>
+              </div>
+          </fieldset> 
+        </form>
+
+        <button class="buttonentrar" type="submit" onsubmit="">
+            Entrar
+        </button>
+
       </div>
-
-      <form>
-
-        <fieldset class="grupo">
-            <div class="campo">
-                <!-- <label for="usuario">
-                    Usuário
-                </label> -->
-                <input type="text" name="user" id="usuario" required>
-            </div>
-
-            <div class="campo">
-                <!-- <label for="boxsenha">
-                    Senha
-                </label> -->
-                <input type="password" name="senha" id="boxsenha" required>
-            </div>
-        </fieldset> 
-      </form>
-
-      <button class="buttonentrar" type="submit" onsubmit="">
-          Entrar
-      </button>
-
-    </div>
   </body>
 </html>
 
 <style>
-
-@media screen and (min-width: 1024px) {
- #main { 
-  min-width: 1000px; 
-  }
-}
 
 * {
     margin: 0;
@@ -58,33 +60,20 @@
     text-decoration: none;
 }  
 
-  body { 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-  isolation: isolate;
-
-  position: flex;
-  width: 1000px;
-  height: 1024px;
-  
-  background: radial-gradient(126.51% 143.38% at 62.71% 104.95%, #24C594 0%, rgba(73, 138, 130, 0.846836) 48.24%, rgba(0, 194, 255, 0.380208) 92.32%);
-
-  mix-blend-mode: normal;
+  body {
+    width: 1000px;
+    height: 950px; 
+    background: linear-gradient( #24C594, #00c2ff61);
   }
 
   .quadro {
     box-sizing: border-box;
 
     position: absolute;
-    width: 1230px;
-    height: 1080px;
-    left: 0px;
-    top: 0px;
+    width: 60%;
+    height: 100%;
 
     background: #FFFFFF;
-    border: 3px solid #CECECE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
@@ -93,9 +82,8 @@
     position: absolute;
     width: 823px;
     height: 146px;
-    left: 360px;
+    left: 350px;
     top: 224px;
-
     font-family: 'Gill Sans MT';
     font-style: normal;
     font-weight: 400;
@@ -202,6 +190,64 @@
     text-align: center;
 
     color: #FFFFFF;
+  }
+
+  .titulo {
+    position: absolute;
+    width: 387px;
+    height: 67px;
+    left: 1382px;
+    top: 426px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  .subtitulo {
+
+    position: absolute;
+    width: 561px;
+    height: 72px;
+    left: 1295px;
+    top: 507px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+  }
+
+  .buttoncadastrar {
+
+    position: absolute;
+    width: 212px;
+    height: 63px;
+    left: 1470px;
+    top: 643px;
+
+    background: #E0F3EF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #313131;
 
   }
 
