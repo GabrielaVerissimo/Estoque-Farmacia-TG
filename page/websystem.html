@@ -4,43 +4,208 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Entre na sua conta :)</title>
 </head>
   <body>
-    <img src="Pharmacist-bro.svg" alt="pharmacist">
 
+    <div class="quadro">
 
+      <div>
+        <h1 id="login">
+          Entre na sua conta
+        </h1>
+      </div>
+
+      <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <!-- <label for="usuario">
+                    Usuário
+                </label> -->
+                <input type="text" name="user" id="usuario" required>
+            </div>
+
+            <div class="campo">
+                <!-- <label for="boxsenha">
+                    Senha
+                </label> -->
+                <input type="password" name="senha" id="boxsenha" required>
+            </div>
+        </fieldset> 
+      </form>
+
+      <button class="buttonentrar" type="submit" onsubmit="">
+          Entrar
+      </button>
+
+    </div>
   </body>
 </html>
 
 <style>
+
+@media screen and (min-width: 1024px) {
+ #main { 
+  min-width: 1000px; 
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}  
+
   body { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  isolation: isolate;
+
+  position: flex;
+  width: 1000px;
+  height: 1024px;
+  
+  background: radial-gradient(126.51% 143.38% at 62.71% 104.95%, #24C594 0%, rgba(73, 138, 130, 0.846836) 48.24%, rgba(0, 194, 255, 0.380208) 92.32%);
+
+  mix-blend-mode: normal;
+  }
+
+  .quadro {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1230px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border: 3px solid #CECECE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+
+  #login {
+    position: absolute;
+    width: 823px;
+    height: 146px;
+    left: 360px;
+    top: 224px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 81px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 58px 151px;
-    gap: 155px;
+    text-align: center;
+  }
 
-    position: relative;
+  #usuario {
+    position: absolute;
+    width: 765px;
+    height: 60px;
+    left: 232px;
+    top: 570px;
 
-    background-image: radial-gradient(69.76% 216.32% at 30.24% 46.2%,
-    
-    #9BB9BD 0%, 
-    rgba(118, 169, 166, 0.846836) 43.95%,
-    rgba(153, 242, 237, 0.380208) 92.32%);
+    background: #EFFBF8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 
-    mix-blend-mode: normal;
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #7E7E7E;
+  }
+
+  .usertitle {
+    position: absolute;
+    width: 226px;
+    height: 40.37px;
+    left: 232px;
+    top: 580px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #7E7E7E;
+  }
+
+  #boxsenha {
+    position: absolute;
+    width: 765px;
+    height: 60px;
+    left: 233px;
+    top: 656px;
+
+    background: #EFFBF8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #7E7E7E;
+  }
+
+  .senhatitle {
+    position: absolute;
+    width: 226.09px;
+    height: 40.37px;
+    left: 222px;
+    top: 666px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #7E7E7E;
+  }
+
+  .buttonentrar {
+
+    position: absolute;
+    width: 212px;
+    height: 63px;
+    left: 508px;
+    top: 789px;
+
+    background: #72C8B3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
 
   }
 
-  img {
-  width: 450px;
-  height: 450px;
 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  }
+
 </style>
