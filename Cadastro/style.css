@@ -2,15 +2,134 @@
     width: 300em;
     height: 100%;
     text-align: center; 
-    margin-top: 15em;
+    margin-top: 5em;
   }
 
   .boxDireita {
     width: 300em;
     height: 59.9em;
     text-align: center;
+    /* margin-top: 100px; */
     /* margin-top: 15em; */
     background-image: radial-gradient(126.51% 143.38% at 62.71% 104.95%, #24C594 0%, rgba(73, 138, 130, 0.846836) 48.24%, rgba(0, 194, 255, 0.380208) 92.32%);
+  }
+
+  .text_cad {
+    color: black;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  h4 {
+    color: #727272;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .linha {
+    height: 1px;
+    width: 30em;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+
+  .inputStyle {
+    box-sizing: border-box;
+    border-style: none;
+  /* position: absolute; */
+    width: 500px;
+    height: 55.87px;
+    left: 165.7px;
+    top: 301.68px;
+    border-bottom: 2px solid #404040;
+  
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  }
+
+  .botaoEnviar {
+    /* position: absolute; */
+    width: 8em;
+    height: 3em;
+    /* left: 508px;
+      top: 789px; */
+    background: #72c8b3;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border-style: none;
+  }
+  
+  .apresentacao {
+    margin-top: 150px;
+
+  }
+
+  h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* margin-top: 200px; */
+  }
+
+  p {
+    font-weight: 450;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* .balao1 {
+    border-style: none;
+    width: 630px;
+    height: 107px;
+    left: 1068px;
+    top: 402px;
+    background: rgba(217, 217, 217, 0.2);
+    border: 4px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 40px 40px 0px;
+  }
+
+  .balao2 {
+    box-sizing: border-box;
+    width: 746px;
+    height: 143px;
+    right: 100px;
+    left: 1119px;
+    top: 556px;
+    border: 4px solid white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px 40px 0px 40px;
+  }
+
+  .balao3 {
+    box-sizing: border-box;
+    width: 696px;
+    height: 101px;
+    left: 1068px;
+    top: 746px;
+    background: rgba(217, 217, 217, 0.2);
+    border: 4px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 40px 40px 0px;
+  } */
+  
+  .texto {
+    margin-top: 100px;
+  }
+  .text_balao {
+    /* margin-top: 1px; */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .celula1:first-child,

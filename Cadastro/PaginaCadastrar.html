@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,15 +13,74 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
     <div class="d-flex flex-row celula12">
         <div class="boxEsquerda">
-
-
+            <div class="celula12">
+                <div>
+                    <h1 class="text_cad">Cadastre-se agora!</h1>
+                    <h4>É rápido e fácil.</h4>
+                    <div class="d-flex justify-content-center">
+                        <div class="linha"></div>
+                      </div>
+                </div>
+            </div>
+            <div>
+                <br>
+                <div>
+                    <p style="color: red;">* Informações obrigatórias para o cadastro</p>
+                </div>
+                <form>
+                    <div>
+                        <input class="inputStyle" type="text" id="Input" placeholder="Login" name="lg_usu" maxlength="12" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="Nome Completo" name="nome_usu" maxlength="100" required>
+                        <input class="inputStyle" type="number" id="Input" placeholder="CRF" name="crf_usu" maxlength="5" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="Telefone com DDD" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}" onblur="formataTelefone(this)" name="fone_usu" maxlength="11" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="Cargo" name="cargo_usu" maxlength="20" required>
+                        <input class="inputStyle" type="password" id="Input" placeholder="Senha" name="sn_usu" maxlength="12" required>
+                        <input class="inputStyle" type="password" id="Input" placeholder="Confirme sua senha" name="confirmasn_usu" maxlength="12" required>
+                        <br>
+                        <br>
+                        <button class="botaoEnviar" type="submit" onclick="return validarSenha()">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="boxDireita">
+            <div class="apresentacao">
+                <br>
+                <h1>Muito bem-vindo! :D</h1>
+                <p>Uma breve apresentação sobre o que irá acontecer. </p>
+            </div>
+            <br>
+            <div class="texto">
+                <p class="text_balao">Antes de colocar a mão na massa</p>
+                <p class="text_balao">vamos cuidar do seu primeiro login</p>
+                <br>
+                <p class="text_balao">Após o cadastro, aguarde a aprovação do gerente!</p>
+                <p class="text_balao">e logo você terá acesso a tudo o que o sistema</p>
+                <p class="text_balao">pode te oferecer!</p>
+                <br>
+                <p class="text_balao">Desde já, seja muito bem vindo a nossa equipe! :)</p>
+            </div>
+            <!-- <div class="balao1">
+                <p class="text_balao">Antes de colocar a mão na massa</p>
+                <p class="text_balao">vamos cuidar do seu primeiro login</p>
+            </div>
+            <br>
+            <div class="balao2">
+                <p class="text_balao">Após o cadastro, aguarde a aprovação do gerente!</p>
+                <p class="text_balao">e logo você terá acesso a tudo o que o sistema</p>
+                <p class="text_balao">pode te oferecer!</p>
+            </div>
+            <br>
+            <div class="balao3">
+                <p class="text_balao">Desde já, seja muito bem vindo a nossa equipe! :)</p>
+            </div> -->
 
         </div>
     </div>
