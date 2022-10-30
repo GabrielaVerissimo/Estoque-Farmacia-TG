@@ -28,3 +28,7 @@ function validarSenha(){
     }
     return true;
  }
+
+ function voltaPaginaLogin(){
+    window.open("/Login/index.html", "_self");
+}
