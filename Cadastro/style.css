@@ -15,21 +15,21 @@
   }
 
   .text_cad {
-    color: #72c8b3;
+    color: black;
     font-weight: 400;
     font-size: 45px;
     font-family: 'Roboto Condensed', sans-serif;
   }
 
   h4 {
-    color: #72c8b3;
+    color: black;
     font-family: 'Roboto', sans-serif;
   }
 
   .linha {
     height: 1px;
     width: 30em;
-    background-color: #72c8b3;
+    background-color: black;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
@@ -89,7 +89,7 @@
     font-weight: 400;
     font-size: 50px;
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     /* margin-top: 200px; */
   }
 
@@ -97,7 +97,7 @@
     font-weight: 450;
     color: white;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   }
 
   /* .balao1 {
