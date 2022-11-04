@@ -1,0 +1,43 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <br>
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+            <!-- <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button> -->
+            <!-- <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu> -->
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div>
+    <mat-card class="configuracoes">
+      <br>
+      <a>Minha conta</a>
+      <br>
+      <div class="quadro">
+        <br>
+        <img src='/assets/profile.svg' class="img-profile">
+        <br>
+        <a class="user">Usuário</a>
+        <br>
+        <a class="cargo">Cargo</a>
+        <br>
+        <button class="btn-config" type="button">Configurações</button>
+        <br>
+        <button class="btn-exit" type="button">Sair</button>
+      </div>
+    </mat-card>
+  </div>
+</div>
