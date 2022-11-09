@@ -18,7 +18,6 @@
 </head>
 <body>
     <div class="d-flex flex-row celula12">
-        <div class="boxEsquerda">
             <div class="celula12">
                 <div>
                     <h1 class="text_cad">Cadastre-se agora!</h1>
@@ -35,14 +34,14 @@
                 </div>
                 <form>
                     <div>
-                        <input class="inputStyle" type="text" id="Input" placeholder="Nome Completo" name="nome_usu" maxlength="100" required>
-                        <input class="inputStyle" type="email" id="Input" placeholder="E-mail" name="email_usu" maxlength="100" required>
-                        <input class="inputStyle" type="number" id="Input" placeholder="CRF" name="crf_usu" maxlength="5" required>
-                        <input class="inputStyle" type="text" id="Input" placeholder="CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
-                        <input class="inputStyle" type="text" id="Input" placeholder="Telefone com DDD" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}" onblur="formataTelefone(this)" name="fone_usu" maxlength="11" required>
-                        <input class="inputStyle" type="text" id="Input" placeholder="Cargo" name="cargo_usu" maxlength="20" required>
-                        <input class="inputStyle" type="password" id="Input" placeholder="Senha" name="sn_usu" maxlength="12" required>
-                        <input class="inputStyle" type="password" id="Input" placeholder="Confirme sua senha" name="confirmasn_usu" maxlength="12" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="* Nome Completo" name="nome_usu" maxlength="100" required>
+                        <input class="inputStyle" type="email" id="Input" placeholder="* E-mail" name="email_usu" maxlength="100" required>
+                        <input class="inputStyle" type="number" id="Input" placeholder="* CRF" name="crf_usu" maxlength="5" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="* CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="* Telefone com DDD" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}" onblur="formataTelefone(this)" name="fone_usu" maxlength="11" required>
+                        <input class="inputStyle" type="text" id="Input" placeholder="* Cargo" name="cargo_usu" maxlength="20" required>
+                        <input class="inputStyle" type="password" id="Input" placeholder="* Senha" name="sn_usu" maxlength="12" required>
+                        <input class="inputStyle" type="password" id="Input" placeholder="* Confirme sua senha" name="confirmasn_usu" maxlength="12" required>
                         <br>
                         <br>
                         <button class="botaoEnviar" type="submit" onclick="return validarSenha()">Enviar</button>
