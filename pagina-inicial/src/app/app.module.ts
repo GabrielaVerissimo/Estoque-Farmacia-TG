@@ -15,12 +15,25 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { VendasComponent } from './vendas/vendas.component';
+import { EstoqueComponent } from './estoque/estoque.component';
+import { MovimentacaoComponent } from './movimentacao/movimentacao.component';
+import { PedidoComponent } from './pedido/pedido.component';
+import { InicioComponent } from './inicio/inicio.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DashboardComponent
+    DashboardComponent,
+    CadastroComponent,
+    VendasComponent,
+    EstoqueComponent,
+    MovimentacaoComponent,
+    PedidoComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

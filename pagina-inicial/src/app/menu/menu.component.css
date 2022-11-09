@@ -32,7 +32,7 @@
 
 .sidenav {
   width: 200px;
-  background-image: radial-gradient(126.51% 143.38% at 62.71% 104.95%, #24C594 0%, rgba(73, 138, 130, 0.846836) 48.24%, rgba(0, 194, 255, 0.380208) 92.32%);
+  background-image: radial-gradient(200% 144% at 60% 100%, #24C594 0%, rgba(73, 138, 130, 0.846836) 60%, rgba(0, 194, 255, 0.380208) 93%);
 }
 
 .sidenav .mat-toolbar {
