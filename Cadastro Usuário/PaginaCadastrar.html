@@ -18,6 +18,7 @@
 </head>
 <body>
     <div class="d-flex flex-row celula12">
+        <div class="boxEsquerda celula12">
             <div class="celula12">
                 <div>
                     <h1 class="text_cad">Cadastre-se agora!</h1>
@@ -34,6 +35,7 @@
                 </div>
                 <form>
                     <div>
+                        <input class="inputStyle" type="text" id="Input" placeholder="* Loja" pattern="[0-9]{11}" onblur="formataCNPJ(this)"
                         <input class="inputStyle" type="text" id="Input" placeholder="* Nome Completo" name="nome_usu" maxlength="100" required>
                         <input class="inputStyle" type="email" id="Input" placeholder="* E-mail" name="email_usu" maxlength="100" required>
                         <input class="inputStyle" type="number" id="Input" placeholder="* CRF" name="crf_usu" maxlength="5" required>
@@ -49,23 +51,25 @@
                 </form>
             </div>
         </div>
-        <div class="boxDireita">
-            <button class="botaoVoltar" onclick="voltaPaginaLogin()">Voltar</button>
-            <div class="apresentacao">
-                <br>
-                <h1>Muito bem-vindo! :D</h1>
-                <p>Uma breve apresentação sobre o que irá acontecer. </p>
-            </div>
-            <br>
-            <div class="texto">
-                <p class="text_balao">Antes de colocar a mão na massa, vamos cuidar do seu primeiro login:</p>
-                <br>
-                <ul>
-                    <li class="text_balao">Após o cadastro, aguarde a aprovação do gerente!</li>
-                    <li class="text_balao">Logo você terá acesso a tudo o que o sistema pode te oferecer!</li>
+        <div class="boxDireita celula12">
+            <div class="celula12">
+                <button class="botaoVoltar" onclick="voltaPaginaLogin()">Voltar</button>
+                <div class="apresentacao">
                     <br>
-                </ul>
-                <p class="text_balao">Desde já, seja muito bem vindo a nossa equipe! :)</p>
+                    <h1>Muito bem-vindo! :D</h1>
+                    <p>Uma breve apresentação sobre o que irá acontecer. </p>
+                </div>
+                <br>
+                <div class="texto">
+                    <p class="text_balao">Antes de colocar a mão na massa, vamos cuidar do seu primeiro login:</p>
+                    <br>
+                    <ul>
+                        <li class="text_balao">Após o cadastro, aguarde a aprovação do gerente!</li>
+                        <li class="text_balao">Logo você terá acesso a tudo o que o sistema pode te oferecer!</li>
+                        <br>
+                    </ul>
+                    <p class="text_balao">Desde já, seja muito bem vindo a nossa equipe! :)</p>
+                </div>
             </div>
         </div>
     </div>

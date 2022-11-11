@@ -16,29 +16,31 @@
     <title>Estoque</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../Página Inicial/pag-inicial.html" style="color: #F8F8F8">
-        <img src="../Images/medicine.svg" width="50" height="50" class="d-inline-block align-top" alt="">
-        Bleu<div class="navbar-brand" style="color: #C7C7C7">Pharma</div>
-      </a>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav" style="margin-left: 50rem;">
-        <br>
-        <a class="nav-item nav-link" href="../Pedidos/pag-pedidos.html" style="color: #F8F8F8;">Pedido</a>
-        <br>
-        <a class="nav-item nav-link" href="../Estoque/pag-estoque.html" style="color: #F8F8F8;">Estoque</a>
-        <br>
-        <a class="nav-item nav-link" href="../Movimentacao/pag-movimentacao.html" style="color: #F8F8F8;">Movimentação</a>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../Página Inicial/pag-inicial.html" style="color: #F8F8F8">
+            <img src="../Images/medicine.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+            Bleu<div class="navbar-brand" style="color: #C7C7C7">Pharma</div>
+          </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <br>
+            <a class="nav-item nav-link" href="../Pedidos/pag-pedidos.html" style="color: #F8F8F8;">Pedido</a>
+            <br>
+            <a class="nav-item nav-link" href="../Estoque/pag-estoque.html" style="color: #F8F8F8;">Estoque</a>
+            <br>
+            <a class="nav-item nav-link" href="../Movimentacao/pag-movimentacao.html" style="color: #F8F8F8;">Movimentação</a>
+          </div>
+        </div>
+      </nav>
   <div class="d-flex flex-row">
     <button class="btn-estoque" onclick="abreRecebimentoLojas()">Recebimento de Lojas</button>
     <button class="btn-estoque">Saída de Lojas</button>
+  </div>
+  <div class="d-flex flex-row">
     <button class="btn-estoque">Acessar Estoque</button>
     <button class="btn-estoque">Recebimento de Pedido</button>
   </div>

@@ -32,3 +32,13 @@ function validarSenha(){
  function voltaPaginaLogin(){
     window.open("/Login/index.html", "_self");
 }
+
+function formataCNPJ(cnpj) {
+    let elementoAlvo = cnpj;
+    let cnpjAtual = cnpj.value;
+    let cpfAtualizado;
+    cpfAtualizado = cnpjAtual.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, function (regex, argumento1, argumento2, argumento3, argumento4) {
+        return argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4;
+    });
+    elementoAlvo.value = cpfAtualizado;
+}

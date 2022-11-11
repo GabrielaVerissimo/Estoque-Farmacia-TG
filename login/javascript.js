@@ -1,5 +1,5 @@
 function abrePaginaCadastrar(){
-    window.open("/Cadastro/PaginaCadastrar.html", "_self");
+    window.open("/Cadastro Usuário/PaginaCadastrar.html", "_self");
 }
 
 function abrePaginaInicial(){

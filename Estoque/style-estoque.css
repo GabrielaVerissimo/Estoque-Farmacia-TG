@@ -24,8 +24,8 @@
 }
 
 .btn-estoque {
-    width: 685px;
-    height: 402px;
+    width: 400px;
+    height: 200px;
     left: 177px;
     top: 167px;
     background: #76B5B5;
@@ -33,11 +33,13 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 57px;
-    display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 160px;
+    margin-right: 4rem;
+    margin-top: 3.5rem;
 
     color: #FFFFFF;
 }
