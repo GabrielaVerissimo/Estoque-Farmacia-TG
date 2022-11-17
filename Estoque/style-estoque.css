@@ -26,8 +26,6 @@
 .btn-estoque {
     width: 400px;
     height: 200px;
-    left: 177px;
-    top: 167px;
     background: #76B5B5;
     border-radius: 20px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -37,7 +35,7 @@
     line-height: 57px;
     align-items: center;
     text-align: center;
-    margin-left: 160px;
+    /* margin-left: 160px; */
     margin-right: 4rem;
     margin-top: 3.5rem;
 
