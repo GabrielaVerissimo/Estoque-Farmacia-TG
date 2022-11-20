@@ -26,3 +26,13 @@ icon.addEventListener('click', function(){
 function voltaPaginaEstoque(){
     window.open("../Estoque/pag-estoque.html", "_self");
 }
+
+function Confirma()
+{
+alert("Recebimento confirmado!");
+}
+
+function Negar()
+{
+alert("Recebimento Negado");
+}

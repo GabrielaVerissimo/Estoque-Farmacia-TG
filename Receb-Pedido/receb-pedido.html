@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/39cc796ec5.js" crossorigin="anonymous"></script>
     <title>Recebimento de Pedido</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
             <form>
               <div class="d-flex flex-row justify-content-center">
                 <div class="d-flex flex-column">
-                  <input class="inputStyle" type="text" id="Input" placeholder="* Número do Pedido" name="num_ped" maxlength="100" required>
+                  <input class="inputStyle" type="text" id="Input" placeholder="* Número do Pedido" name="num_ped" maxlength="100" required><button class="btn" type="button"><i class="fa-solid fa-arrow-down"></i></button>
                   <div class="input-group-text">
                     <input type="checkbox" aria-placeholder="Perda durante transporte ou manuseio?"><label>Perda durante transporte ou manuseio?</label>
                   </div>
@@ -74,23 +75,34 @@
                   <!-- <img src="../Images/eye.svg" alt=""> -->
                   <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
                   <div class="d-flex flex-row">
-                      <button class="btnRegistrar" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Confirmar</button>
-                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Confirmar" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
+                      <button class="btnRegistrar" type="button" data-toggle="modal" data-target="#modalConfirma">Confirmar</button>
+                      <div class="modal fade" id="modalConfirma" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
                           <div class="modal-content">
-                            Confirmar
+                            <div class="modal-body">
+                              <h5 class="modal-title" id="exampleModalLabel">Confirmar recebimento?</h5>
+                              <div class="linha1" style="background-color: #4D4B4B; text-align:center;"></div>
+                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                              <button type="submit" class="btnEnviar" onclick="Confirma()" value="Exibir Alert">Enviar</button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      
-                      <button class="btnNegar" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Negar</button>
-                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Negar" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
+                      <button class="btnNegar" type="button" data-toggle="modal" data-target="#modalNegar">Negar</button>
+                      <div class="modal fade" id="modalNegar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
                           <div class="modal-content">
-                            Negar
+                            <div class="modal-body">
+                              <h5 class="modal-title" id="exampleModalLabel">Negar recebimento?</h5>
+                              <div class="linha1" style="background-color: #4D4B4B; text-align:center;"></div>
+                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                              <button type="submit" class="btnNegar1" onclick="Negar()" value="Exibir Alert">Negar</button>
+                            </div>
                           </div>
                         </div>
-                      </div>                      
+                      </div>         
                   </div>
                 </div>
               </div>

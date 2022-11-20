@@ -16,7 +16,6 @@
     <title>Faça seu login!</title>
   </head>
   <body>
-    
     <div class="d-flex flex-row celula12 mobile">
       <div class="boxEsquerda celula8">
         <div class="celula12">
@@ -40,6 +39,21 @@
             <br>
             <div>
               <button class="botaoEnviar" type="submit" onclick="abrePaginaIncial()">Enviar</button>
+            </div>
+            <div>
+              <button type="button" class="btn-senha" data-toggle="modal" data-target="#modalSenha">Esqueci a Senha</button>
+              <div class="modal fade" id="modalSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h5 class="modal-title" id="exampleModalLabel">Esqueci a Senha</h5>
+                      <div class="linha1" style="background-color: #4D4B4B; text-align:center;"></div>
+                      <input class="inputStyle1" type="text" id="Input" placeholder="* CPF" name="cd_usu" maxlength="12" required>
+                      <button type="submit" class="botaoEnviar" onclick="Confirma()" value="Exibir Alert" style="margin-top: 5em;">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         </form>

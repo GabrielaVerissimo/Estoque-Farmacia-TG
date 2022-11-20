@@ -171,6 +171,55 @@ textarea {
     color: #404040;
 }
 
+.fa-arrow-down {
+    color: rgb(70, 70, 70);
+}
+
+.btn {
+    background-color: transparent;
+    border-style: none;
+    width: 26px;
+    margin-left: 26em;
+    margin-top: -25px;
+}
+
+.btnEnviar {
+    /* position: absolute; */
+  width: 8em;
+  height: 3em;
+  background: #72c8b3;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border-style: none;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+.modal-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 57px;
+    text-align: center;
+    color: black;
+}
+
+.btnNegar1 {
+    /* position: absolute; */
+  width: 8em;
+  height: 3em;
+  background: #BE6363;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border-style: none;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
 /* p {
 font-family: 'Roboto Condensed', sans-serif;
 font-style: normal;
