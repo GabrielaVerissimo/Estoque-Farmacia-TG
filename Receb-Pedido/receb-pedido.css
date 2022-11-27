@@ -181,10 +181,10 @@ textarea {
     width: 26px;
     margin-left: 26em;
     margin-top: -25px;
+    justify-content: center;
 }
 
 .btnEnviar {
-    /* position: absolute; */
   width: 8em;
   height: 3em;
   background: #72c8b3;

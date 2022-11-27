@@ -41,7 +41,9 @@
                         <input class="inputStyle" type="number" id="Input" placeholder="* CRF" name="crf_usu" maxlength="5" required>
                         <input class="inputStyle" type="text" id="Input" placeholder="* CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
                         <input class="inputStyle" type="text" id="Input" placeholder="* Telefone com DDD" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}" onblur="formataTelefone(this)" name="fone_usu" maxlength="11" required>
-                        <input class="inputStyle" type="text" id="Input" placeholder="* Cargo" name="cargo_usu" maxlength="20" required>
+                        <select class="inputStyle" type="select" id="Input" placeholder="* Cargo" name="cargo_usu" maxlength="20" required>
+                            <option value="cargo">* Selecione seu Cargo</option>
+                        </select>
                         <input class="inputStyle" type="password" id="Input" placeholder="* Senha" name="sn_usu" maxlength="12" required>
                         <input class="inputStyle" type="password" id="Input" placeholder="* Confirme sua senha" name="confirmasn_usu" maxlength="12" required>
                         <br>
