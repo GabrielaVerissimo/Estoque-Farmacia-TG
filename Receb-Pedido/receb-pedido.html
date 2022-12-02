@@ -57,22 +57,9 @@
                   </div>
                   <textarea id="textarea" name="textarea" placeholder="Observações"></textarea>
                 </div>
-                <!-- <div class="d-flex flex-row">
-                    <div class="d-flex flex-column">
-                        <p>Hora da Entrega</p>
-                        <p>12:02:55</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row">
-                    <div class="d-flex flex-column">
-                        <p>Data de Entrega</p>
-                        <p>28/09/2022</p>
-                    </div>
-                </div> -->
                 <div class="d-flex flex-column">
                   <input class="inputStyle" type="text" id="Input" placeholder="* CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
                   <input class="inputStyle" type="password" id="password" name="password" placeholder="* Insira sua senha" maxlength="100" required>
-                  <!-- <img src="../Images/eye.svg" alt=""> -->
                   <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
                   <div class="d-flex flex-row">
                       <button class="btnRegistrar" type="button" data-toggle="modal" data-target="#modalConfirma">Confirmar</button>
@@ -82,8 +69,8 @@
                             <div class="modal-body">
                               <h5 class="modal-title" id="exampleModalLabel">Confirmar recebimento?</h5>
                               <div class="linha1" style="background-color: #4D4B4B; text-align:center;"></div>
-                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Insira sua senha" name="password" maxlength="100" required>
-                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="password" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="password" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
                               <button type="submit" class="btnEnviar" onclick="Confirma()" value="Exibir Alert">Enviar</button>
                             </div>
                           </div>
@@ -96,8 +83,8 @@
                             <div class="modal-body">
                               <h5 class="modal-title" id="exampleModalLabel">Negar recebimento?</h5>
                               <div class="linha1" style="background-color: #4D4B4B; text-align:center;"></div>
-                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Insira sua senha" name="password" maxlength="100" required>
-                              <input class="inputStyle" type="password" id="passwprd" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="password" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                              <input class="inputStyle" type="password" id="password" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
                               <button type="submit" class="btnNegar1" onclick="Negar()" value="Exibir Alert">Negar</button>
                             </div>
                           </div>

@@ -1,13 +1,13 @@
 function abreRecebimentoLojas(){
-    window.open("/Receb-Lojas/receb-lojas.html", "_self");
+    window.open("/Aprov-Pedidos/receb-lojas.html", "_self");
 }
 
 function abreSaidaLojas(){
-    window.open("/Saida-Lojas/saida-lojas.html", "_self");
+    window.open("/Saida-Avulsa/saida-lojas.html", "_self");
 }
 
 function abreAcessoEstoque(){
-    window.open("/Acessar-Estoque/acessar-estoque.html", "_self");
+    window.open("/Consulta-Estoque/acessar-estoque.html", "_self");
 }
 
 function abreRecebimentoPedido(){

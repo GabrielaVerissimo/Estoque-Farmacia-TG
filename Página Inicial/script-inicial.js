@@ -95,3 +95,11 @@
       var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
       chart.draw(view, options);
   }
+
+function ConfirmaEdicao(){
+  alert("Edição salva com sucesso!");
+}
+
+function Confirma(){
+  alert("Senha Redefinida!");
+}

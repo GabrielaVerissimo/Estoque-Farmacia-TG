@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Recebimento de Lojas</title>
+    <script src="https://kit.fontawesome.com/39cc796ec5.js" crossorigin="anonymous"></script>
+    <title>Saída Avulsa de Produtos</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -38,53 +39,26 @@
       </nav>
       <div class="box-conteudo">
         <div class="d-flex justify-content-left">
-          <h1 class="h1-receb">Saída da Loja</h1><div class="linha d-flex justify-content-center"></div>
+          <h1 class="h1-receb">Saída Avulsa de Produtos</h1><div class="linha d-flex justify-content-center"></div>
         <div class="justify-content-end">
           <button class="botaoVoltar" onclick="voltaPaginaEstoque()">Voltar</button>
         </div>
         </div>
         <div class="d-flex justify-content-left">
-          <p>* Informações obrigatórias para o resgistro.</p>
+          <p>* Informações obrigatórias.</p>
         </div>
         <div class="inputs">
           <form>
             <div class="d-flex flex-row justify-content-center">
               <div class="d-flex flex-column">
-                <input class="inputStyle" type="text" id="Input" placeholder="* Nome Comercial" name="nome_com" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Código de Barras" name="cod_bar" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* SKU" name="sku" maxlength="100" required>
-                <div class="d-flex flex-row">
-                  <input class="inputStyle1" type="text" id="Input" placeholder="* Genérico?" name="generico" maxlength="3" required>
-                  <input class="inputStyle1" type="text" id="Input" placeholder="* Preço" name="preço" maxlength="100" required>  
-                </div>
-                <div class="d-flex flex-row">
-                  <input class="inputStyle1" type="text" id="Input" placeholder="* Volume" name="volume" maxlength="3" required>
-                  <input class="inputStyle1" type="text" id="Input" placeholder="* Unidade" name="und" maxlength="100" required>
-                </div>
-                <input class="inputStyle1" type="text" id="Input" placeholder="* Quantidade" name="qtd" maxlength="100" required>
+                <input class="inputStyle" type="text" id="Input" placeholder="* Código de Barras" name="cod_barras" maxlength="100" required><button class="btn" type="button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="inputStyle" type="number" id="Input" placeholder="* Qtde. de Produtos Perdidos" name="qtd_prod" maxlength="11" required>
+                <textarea id="textarea" name="textarea" placeholder="Como o produto foi perdido?" style="margin-top: 1rem;" required></textarea>
               </div>
-              <div class="d-flex flex-column">
-                <input class="inputStyle" type="text" id="Input" placeholder="* Recomendação" name="recomendacao" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Restrição" name="restr" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Princípio Ativo" name="princp_ativo" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Via/Idade" name="via_idade" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Perfumaria" name="perf" maxlength="100" required>
-              </div>
-              <div class="d-flex flex-column">
-                <input class="inputStyle" type="text" id="Input" placeholder="* Data de Validade/Fabricação" name="data_valfab" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Lote" name="lote" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Laboratório" name="lab" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Cód." name="cod" maxlength="100" required>
-                <input class="inputStyle" type="text" id="Input" placeholder="* Farmácia" name="cnpj_farmacia" maxlength="100" required>
-                <div class="input-group-text">
-                  <input type="checkbox" aria-placeholder="Perda durante transporte ou manuseio?"><label> Perda durante transporte ou manuseio?</label>
-                </div>               
-              </div>
-            </div>
           </form>
         </div>
         <div class="d-flex justify-content-center">
-          <button class="btnRegistrar" type="submit">Registrar</button>
+          <button class="btnRegistrar" type="submit">Enviar</button>
         </div>
       </div>
 </body>

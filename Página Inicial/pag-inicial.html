@@ -41,7 +41,7 @@
     <div class="d-flex flex-row">
       <div>
           <div>
-              <p class="txt-home">Bem vindo, Lucas Henrique!</p>
+              <p class="txt-home">Bem-vindo, Lucas Henrique!</p>
               <div class="d-flex justify-content-left">
                   <div class="linha" style="background-color: #4D4B4B; text-align:center;"></div>
                 </div>
@@ -62,7 +62,78 @@
                         <img src="../Images/profile.svg" style="margin-left: 11rem;">
                         <p class="usu-txt" style="margin-top: 2rem;">Lucas Henrique</p>
                         <p class="usu-txt2 justify-content-center" style="margin-top: -1rem;">Atendente</p>
-                        <button class="btn-config" type="button" style="text-align: center;">Configurações</button>
+                        <button class="btn-config" type="button" data-toggle="modal" data-target="#modalConfiguracoes" style="text-align: center;">Configurações</button>
+                        <div class="modal fade" id="modalConfiguracoes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <h5 class="modal-title" id="exampleModalLabel">Configurações</h5>
+                                <div class="linha1 " style="background-color: #4D4B4B; text-align:center;"></div>
+                                <div class="d-flex flex-column">
+                                  <div class="justify-content-center">
+                                    <input class="inputStyle" type="text" id="Input" placeholder="* Nome Completo" name="nome_usu" maxlength="100" required>
+                                    <input class="inputStyle" type="email" id="Input" placeholder="* E-mail" name="email_usu" maxlength="100" required>
+                                    <input class="inputStyle" type="number" id="Input" placeholder="* CRF" name="crf_usu" maxlength="5" required>
+                                    <input class="inputStyle" type="text" id="Input" placeholder="* CPF" pattern="[0-9]{11}" onblur="formataCPF(this)" name="cpf_usu" maxlength="11" required>
+                                    <input class="inputStyle" type="text" id="Input" placeholder="* Telefone com DDD" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}" onblur="formataTelefone(this)" name="fone_usu" maxlength="11" required>
+                                    <select class="inputStyle" type="select" id="Input" placeholder="* Cargo" name="cargo_usu" maxlength="20" required>
+                                        <option value="cargo">* Selecione seu Cargo</option>
+                                    </select>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btnEditar" onclick="ConfirmaEdicao()" value="Exibir Alert">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-config" type="button" data-toggle="modal" data-target="#modalAutenticacao" style="text-align: center;">Autenticar</button>
+                        <div class="modal fade" id="modalAutenticacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <h5 class="modal-title" id="exampleModalLabel">Autenticar Usuário</h5>
+                                <div class="linha1 " style="background-color: #4D4B4B; text-align:center;"></div>
+                                <div class="d-flex flex-column">
+                                  <div class="justify-content-center">
+                                    <select class="inputStyle" type="select" id="Input" placeholder="autenticar usu" name="func_autent" maxlength="20" required>
+                                        <option value="cargo">Selecione o funcionário</option>
+                                    </select>
+                                    <select class="inputStyle" type="select" id="Input" placeholder="cargo usuario" name="cargo_usu" maxlength="20" required>
+                                      <option value="cargo">Selecione o Cargo do Funcionário</option>
+                                  </select>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btnEditar">Confirmar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-config" type="button" data-toggle="modal" data-target="#modalRedefinir" style="text-align: center;">Redefinir</button>
+                        <div class="modal fade" id="modalRedefinir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <h5 class="modal-title" id="exampleModalLabel">Redefinir Senha</h5>
+                                <div class="linha1 " style="background-color: #4D4B4B; text-align:center;"></div>
+                                <div class="d-flex flex-column">
+                                  <div class="justify-content-center">
+                                    <select class="inputStyle" type="select" id="Input" placeholder="autenticar usu" name="func_autent" maxlength="20" required>
+                                        <option value="cargo">Selecione o funcionário</option>
+                                    </select>
+                                    <input class="inputStyle" type="password" id="password" placeholder="Redefinir senha do usuário" name="password_usu" maxlength="100" required>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Insira sua senha" name="password" maxlength="100" required>
+                                    <input class="inputStyle" type="password" id="password" placeholder="* Confirme sua senha" name="password" maxlength="100" required>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btnEditar" onclick="Confirma()">Confirmar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <button class="btn-sair" type="button" style="text-align: center;">Sair</button>
                       </div>
                     </div>

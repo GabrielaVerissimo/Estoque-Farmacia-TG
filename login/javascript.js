@@ -8,5 +8,5 @@ function abrePaginaInicial(){
 
 function Confirma()
 {
-alert("Aguarde a Aprovação do gerente! :)");
+alert("Aguarde a aprovação do gerente! :)");
 }
